@@ -2,15 +2,15 @@ import React from 'react'
 import { Header } from '../components/Header'
 import { Main } from '../components/Main'
 import { Footer } from '../components/Footer'
-import * as S from './style'
+import GlobalStyle from '../styles/global' 
 
 export default function App() {
   return (
-    <S.Background>
+    <div>
+        <GlobalStyle />
         <Header />
-        <S.Caixa>
-        </S.Caixa>
+        <Main />
         <Footer />
-    </S.Background>
+    </div>
   )
 }

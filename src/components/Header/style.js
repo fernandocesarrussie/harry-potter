@@ -9,12 +9,15 @@ export const globalStyle = createGlobalStyle`
     padding: 0;
     }
 `
+export const Logo = styled.img`
+    width: 25vw;
+`
 export const Caixa = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     height: 23vh;
-    background-color: #242633;
+    background-color: #182a46;
 `
 export const Container = styled.div`
     display: flex;

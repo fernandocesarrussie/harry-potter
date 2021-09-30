@@ -2,11 +2,12 @@ import React from 'react'
 import {Link } from 'gatsby'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
-import * as S from './style'
+import GlobalStyle from '../styles/global' 
 
 export default function Sobre() {
     return (
-        <S.Background>
+        <div>
+            <GlobalStyle />
             <Header />
             <h1>Sobre</h1>
             <p>
@@ -16,6 +17,6 @@ export default function Sobre() {
                 Projeto produzido por Fernando Felip, aluno do Vai na Web, modulo 3. Sem fins lucrativos.
             </p>
             <Footer />
-        </S.Background>
+        </div>
     )
 }
