@@ -9,6 +9,7 @@ export function Main(){
         api.get()
         .then(response => setList(response.data))
       }, [])
+
     return (
         <M.Container>
             {list.map((item, index) => (

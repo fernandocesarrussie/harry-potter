@@ -1,10 +1,18 @@
 import React from "react"
-import * as S from './style'
+import harry from '../../images/harry2.png'
+import * as F from './style'
 
 export function Footer(){
     return (
-        <S.Container>
-            <p>Aqui é a Footer!</p>
-        </S.Container>
+        <F.Background>
+            <F.Container>
+                <div>
+                    <F.Img src={harry}/>
+                </div>
+                <div>
+                    <F.About href="https://harrypotter.fandom.com/pt-br/wiki/Página_Principal" target="_blank">Mais sobre</F.About>
+                </div>
+            </F.Container>
+        </F.Background>
     )
 }

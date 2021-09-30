@@ -12,6 +12,11 @@ const StyledLink = styled(Link)`
     font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.5s;
+        &:hover{
+           text-decoration: underline solid ;}
 `
 export function Header(){
 
@@ -22,9 +27,8 @@ export function Header(){
             {/* <Link to="/"><S.Title>Harry Poter</S.Title></Link> */}
             <H.Menu>
             <StyledLink to="/">Início</StyledLink>
-            <StyledLink to="/Sobre">Sobre</StyledLink>
-            <StyledLink to="/">História</StyledLink>
-            <StyledLink to="/">Sobre</StyledLink>
+            <StyledLink to="/Personagens">Personagens</StyledLink>
+            <StyledLink to="/Filmes">Filmes</StyledLink>
             </H.Menu>
             </H.Container>
         </H.Caixa>
