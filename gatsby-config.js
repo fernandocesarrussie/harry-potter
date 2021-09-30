@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "projeto-gatsby",
+    title: "Harry Potter",
   },
   plugins: ["gatsby-plugin-styled-components"],
 };

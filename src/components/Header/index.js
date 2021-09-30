@@ -1,21 +1,36 @@
 import React from "react"
-import * as S from './style'
-import logo from "../../images/logoHP.png"
+import * as H from './style'
+import logo from "../../images/logo2.png"
 import { Link } from 'gatsby'
+import styled from "styled-components";
 
+const StyledLink = styled(Link)`
+    @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+    font-family: 'Ephesis', cursive;
+    color: #ffe65b;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.5s;
+        &:hover{
+           text-decoration: underline solid ;}
+`
 export function Header(){
+
     return (
-        <S.Caixa>
-            <S.Container>
-            <img src={logo}/>
+        <H.Caixa>
+            <H.Container>
+            <H.Logo src={logo}/>
             {/* <Link to="/"><S.Title>Harry Poter</S.Title></Link> */}
-            <S.Menu>
-            <Link to="/"><S.Item>Início</S.Item></Link>
-            <Link to="/Personagens"><S.Item>Personagens</S.Item></Link>
-            <Link to="/Historia"><S.Item>História</S.Item></Link>
-            <Link to="/Sobre"><S.Item>Sobre</S.Item></Link>
-            </S.Menu>
-            </S.Container>
-        </S.Caixa>
+            <H.Menu>
+            <StyledLink to="/">Início</StyledLink>
+            <StyledLink to="/Personagens">Personagens</StyledLink>
+            <StyledLink to="/Filmes">Filmes</StyledLink>
+            </H.Menu>
+            </H.Container>
+        </H.Caixa>
     )
 }
